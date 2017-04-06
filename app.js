@@ -33,6 +33,11 @@ app.config(['$stateProvider','$urlRouterProvider', '$locationProvider', ($stateP
 				}]
 			}
 		})
+		.state('home.user', {
+			url: 'user',
+			templateUrl: 'app/modules/user/user.html',
+			controller: 'UserCtrl'
+		})
 
 	$locationProvider.html5Mode(true)
 

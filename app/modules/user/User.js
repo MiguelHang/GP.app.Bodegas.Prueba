@@ -8,5 +8,13 @@
 			last_name: '',
 			avatar: ''
 		}
+
+		user.setData = data => {
+			user.id = data.id
+			user.first_name = data.first_name
+			user.last_name = data.last_name
+			user.avatar = data.avatar
+		}
+		return user
 	}
 })();
