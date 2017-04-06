@@ -15,7 +15,7 @@ app.config(['$stateProvider','$urlRouterProvider', '$locationProvider', ($stateP
 			controller: 'LoginCtrl'
 		})
 		.state('home', {
-			url:'',
+			url:'/',
 			templateUrl: 'app/modules/home/home.html',
 			controller: 'HomeCtrl',
 			resolve: {
@@ -23,15 +23,13 @@ app.config(['$stateProvider','$urlRouterProvider', '$locationProvider', ($stateP
 			}
 		})
 		.state('home.cellar', {
-			url: '/cellar',
+			url: 'cellar',
 			templateUrl: 'app/modules/cellar/cellar.html',
 			controller: 'CellarCtrl',
 			resolve: {
 				cellarData:['CellarServices', (CellarServices) => {
-					let id = localStorage.getItem('cellarId')
-					console.log(id)
-					// return CellarServices.getCellar(JSON.parse(id))
-					return 
+					let page = 1
+					return CellarServices.getUsers(page)
 				}]
 			}
 		})

@@ -31,10 +31,5 @@
       $uibModalInstance.dismiss('cancel');
     };
 
-    $scope.recuperarDatos = function() {
-      $uibModalInstance.dismiss('cancel');
-      $state.go("home.recuperarDatos");
-    };
-
   }
 })();
