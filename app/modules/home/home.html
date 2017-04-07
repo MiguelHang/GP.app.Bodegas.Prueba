@@ -1,9 +1,11 @@
+
 <nav class="navbar navbar-default">
 	  <div class="container-fluid">
-	    <div class="navbar-header">
+	    <div class="navbar-header col-md-12">
 	      <a class="navbar-brand" href="#">
 	        <p>GP</p>
 	      </a>
+	      <button class="btn btn-danger pull-right" ng-click="logOut()">LogOut</button>
 	    </div>
 	  </div>
 </nav>
@@ -12,7 +14,7 @@
 		<div class="col-md-3 sidenav">
 			<ul class="nav nav-pills nav-stacked">
 				<h4>Usuarios Prueba</h4>
-				<li class="active"><a href="#section1" class="glyphicon glyphicon-th-large"> Usuarios</a></li>
+				<li class="active"><a href="#section1" class="glyphicon glyphicon-th-large" ng-click="change('cellar')" > Usuarios</a></li>
 				<li><a href="#section2" class="glyphicon glyphicon-glass"> Vinos</a></li>
 				<li><a href="#section3">Widget</a></li>
 			</ul>

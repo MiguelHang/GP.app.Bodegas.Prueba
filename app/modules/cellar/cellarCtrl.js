@@ -37,7 +37,6 @@
 			  	$state.go('home.user')
 			  }
 
-
 		}
 	}
 })();

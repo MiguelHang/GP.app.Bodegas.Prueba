@@ -1,3 +1,4 @@
+'use strict';
 let app = angular.module('appBodegas', ['ui.router', 'ui.bootstrap'])
 
 app.constant('settings', {
