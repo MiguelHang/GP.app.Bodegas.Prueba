@@ -31,7 +31,7 @@
 			       	text: 'Ultima modificación ' + $filter('date')(response.updatedAt, 'short') , 
 			       	type:'success'},() => {
 
-			       	$state.buscar(user)
+			       	$scope.buscar(user)
 			       	$state.go('home.cellar')
 			       })
 				}else{
