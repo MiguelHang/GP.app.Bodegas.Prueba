@@ -1,0 +1,26 @@
+<div>
+	<form name="editForm" novalidate>
+	<div class="modal-header">
+		<h3 class="modal-title"><translate>Editar Usuario</translate></h3>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-sm-12">
+			<div class="text-center">
+				<img class="media-photo img-circle" src="{{user.avatar}}" alt="avatar" ng-click="showUrl=!showUrl" >
+			</div>
+					<label><translate>Nombre</translate></label>
+					<input type="text" ng-model="nombre" class="form-control" required>
+					<label><translate>Apellidos</translate></label>
+					<input type="text" ng-model="apellido" class="form-control" required><label ng-show="showUrl"><translate>URL Avatar</translate></label>
+					<input ng-if="showUrl" type="text" ng-model="user.avatar" class="form-control" required>
+			</div>
+		</div>
+	</div>
+	<div class=" text-center">
+		<button class="btn btn-success" type="submit" ng-click="guardar(user)" ng-disabled="!editForm.$valid"><translate>Guadar</translate></button>
+		<button class="btn btn-danger" type="button" ng-click="cancelar()"><translate>Cancelar</translate></button>
+	</div>
+</form>
+
+</div>

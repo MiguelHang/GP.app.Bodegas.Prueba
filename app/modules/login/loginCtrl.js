@@ -11,13 +11,5 @@
 				controller: 'ModalLoginCtrl'
 			});
 
-		// $scope.login = () => {
-		// 	$uibModal.open({
-		// 		animation: true,
-		// 		templateUrl: 'app/templates/modalLogin.html',
-		// 		size: 'lg',
-		// 		controller: 'ModalLoginCtrl'
-		// 	});
-		// }
 	}
 })();

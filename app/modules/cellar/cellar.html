@@ -1,3 +1,18 @@
 <div>
-	<h1>CELLAR</h1>
+	<div class="media" ng-model="cellar" ng-repeat="user in cellar">
+		<div class="pull-left">
+			<img class="media-photo img-circle" src="{{user.avatar}}" alt="avatar">
+		</div>
+		<div class="media-body">
+			<h2 class="title">{{user.first_name}}</h2>
+			<h5 class="title">{{user.id}}</h5>
+			<h4 class="title"><i>{{user.last_name}}</i></h4>
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso</p>
+			<button type="button" class="btn btn-info pull-right" ng-click="editUser(user)">Editar</button>
+		</div>
+		<hr>
+	</div>
+	<div class="text-center">
+	<ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-link-numbers="true" rotate="false" ng-click="setPage(bigCurrentPage)"></ul>
+	</div>
 </div>
